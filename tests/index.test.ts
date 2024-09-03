@@ -70,7 +70,7 @@ describe("Trip Routes", () => {
           id: "trip2",
           destination: "ATL",
           origin: "PEK",
-          duration: 360,
+          duration: 248,
           cost: 200,
           type: "flight",
           display_name: "from PEK to ATL by flight",
