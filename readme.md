@@ -30,8 +30,9 @@ Getting Started
 
 1.  **Clone the repository:**
 
-    `git clone https://github.com/alescofet/bizaway-tech-challenge.git
-    cd bizaway-tech-challenge`
+    `git clone https://github.com/alescofet/bizaway-tech-challenge.git`
+    
+    `cd bizaway-tech-challenge`
 
 2.  **Install dependencies:**
 
