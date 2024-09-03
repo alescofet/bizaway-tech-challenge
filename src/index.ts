@@ -15,9 +15,17 @@ app.use(express.json());
 app.get('/trips', getTrips);
 
 app.post('/favorites/add', addFavorite);
-app.get('/favorites/:username', getFavorites);
+app.get('/favorites/byUsername', getFavorites);
 app.delete('/favorites/remove', removeFavorite);
 
-app.listen(port, () => {
+export const server = app.listen(port, () => {
     console.log(`Server listening on http://localhost:${port}`);
 });
+
+process.on( 'SIGTERM', function () {
+    server.close(function () {
+      console.log( "Closed out remaining connections.");
+      // Close db connections, etc.
+    });
+ 
+ });

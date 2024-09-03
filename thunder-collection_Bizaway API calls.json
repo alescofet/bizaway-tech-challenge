@@ -1,0 +1,103 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Bizaway API calls",
+    "collectionId": "6cdc4600-f8a3-4857-9e0f-805ff60fba4c",
+    "dateExported": "2024-09-03T10:50:45.764Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "15051f5e-adaa-4e9e-ae8c-a046471d4e5b",
+            "colId": "6cdc4600-f8a3-4857-9e0f-805ff60fba4c",
+            "containerId": "",
+            "name": "Get Trips",
+            "url": "http://localhost:3000/trips?destination=ATL&origin=PEK&sort_by=fastest",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-09-03T09:56:09.304Z",
+            "modified": "2024-09-03T09:56:09.304Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "destination",
+                    "value": "ATL",
+                    "isPath": false
+                },
+                {
+                    "name": "origin",
+                    "value": "PEK",
+                    "isPath": false
+                },
+                {
+                    "name": "sort_by",
+                    "value": "fastest",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "92d2d29b-fb6b-4a75-ae9e-6ceb62def1ca",
+            "colId": "6cdc4600-f8a3-4857-9e0f-805ff60fba4c",
+            "containerId": "",
+            "name": "Add trip to favorites",
+            "url": "http://localhost:3000/favorites/add",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-09-03T09:59:00.243Z",
+            "modified": "2024-09-03T10:03:53.731Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"Alex\",\n  \"trip\": {\n  \"origin\": \"PEK\",\n  \"destination\": \"ATL\",\n  \"cost\": 1302,\n  \"duration\": 20,\n  \"type\": \"car\",\n  \"id\": \"bc9755e6-0d66-4085-8b59-213db8787bf0\",\n  \"display_name\": \"from PEK to ATL by car\"\n  }\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "d70d4105-0e31-4ae2-b3c4-283cc986224f",
+            "colId": "6cdc4600-f8a3-4857-9e0f-805ff60fba4c",
+            "containerId": "",
+            "name": "Get Alex favorites",
+            "url": "http://localhost:3000/favorites/byUsername?username=Alex",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-09-03T10:02:52.951Z",
+            "modified": "2024-09-03T10:02:52.951Z",
+            "headers": []
+        },
+        {
+            "_id": "49c90997-5bac-4982-9844-cbd98d8db7fb",
+            "colId": "6cdc4600-f8a3-4857-9e0f-805ff60fba4c",
+            "containerId": "",
+            "name": "Add trip to favorites 2",
+            "url": "http://localhost:3000/favorites/add",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-09-03T10:18:52.167Z",
+            "modified": "2024-09-03T10:20:07.837Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"Alex\",\n  \"trip\": {\n    \"origin\": \"PEK\",\n    \"destination\": \"ATL\",\n    \"cost\": 748,\n    \"duration\": 20,\n    \"type\": \"car\",\n    \"id\": \"2c1f546b-1343-4c69-8f20-744b416ce254\",\n    \"display_name\": \"from PEK to ATL by car\"\n  }\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "940752e5-6a13-4b4b-bb54-1d9cf68de1ac",
+            "colId": "6cdc4600-f8a3-4857-9e0f-805ff60fba4c",
+            "containerId": "",
+            "name": "Delete trip from favorites",
+            "url": "http://localhost:3000/favorites/remove",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-09-03T10:20:30.926Z",
+            "modified": "2024-09-03T10:50:12.297Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"Alex\",\n  \"tripId\": \"2c1f546b-1343-4c69-8f20-744b416ce254\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "LnAlmMcpQwEhVBPw83zyRNXDObaq2x8_Y78Bh4tgIDOsAQAXj9m7g8MrNZ2k5mZO4HwMOGMb2qKOY8-wNigaIg"
+}
