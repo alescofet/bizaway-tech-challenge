@@ -2,7 +2,6 @@ require('dotenv').config();
 
 const mongoose = require('mongoose');
 const uri = process.env.DB_NAME;
-const clientOptions = { serverApi: { version: '1', strict: true, deprecationErrors: true } };
 
 export async function connectDB(): Promise<void> {
   try {

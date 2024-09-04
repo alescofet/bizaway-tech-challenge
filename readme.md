@@ -14,6 +14,7 @@ Features
 -   **MongoDB Integration**: MongoDB is used to store user favorite trips.
 -   **TypeScript**: The project is written in TypeScript for better type safety and development experience.
 -   **In-memory MongoDB for Testing**: The project uses `mongodb-memory-server` to spin up an in-memory MongoDB instance for testing purposes.
+-   **Swagger**: Implemented for API documentation.
 
 Prerequisites
 -------------
@@ -44,6 +45,7 @@ Getting Started
 
     -   `API_KEY`: Your API key for fetching trips.
     -   `MONGODB_URI`: The MongoDB connection string.
+    -   `PORT`: The port you want to use to launch the app.
 
 ### Running the Application
 
@@ -51,7 +53,7 @@ To run the application in development mode, use:
 
 `npm run start`
 
-This will compile the TypeScript code and start the server on `http://localhost:3000`.
+This will compile the TypeScript code and start the server on `http://localhost:<PORT>`.
 
 ### Running Tests
 
@@ -118,3 +120,7 @@ API Endpoints
 ### Import API Calls
 
 -   To make it easier for the reviewer the repository has a "thunder-collection_Bizaway API calls.json" that can be imported using [ThunderClient](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) to test the API with some predefined calls.
+
+### Swagger API documentation
+
+-   Go to `http://localhost:<PORT>/api-docs` to view the swagger documentation once the server is up & running.
